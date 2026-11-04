@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: whitesmoke;
+    min-height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding:20px;
+}
+
+.container {
+    background: white;
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px black;
+}
+
+h2 {
+    text-align: center;
+    color:blueviolet;
+}
+.createAccount{
+    display: flex;
+    justify-content: start;
+    color:gray;
+    font-size: small;
+}
+
+p {
+    text-align: center;
+    color: blueviolet;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin:10px 0;
+    border : 1px solid rgb(15, 15, 15);
+    border-radius: 7px;
+    outline: none;
+}
+
+input focus {
+    border-color: brown;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background-color:rgb(43, 43, 252);
+    color:white;
+    border:none;
+    border-radius: 7px;
+    cursor:pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: rgb(3, 3, 149);
+}
+
+[hidden] {
+    display: none !important;
+}
+
+
+.toggle-btn {
+    width: fit-content;
+    padding: 4px 9px;
+    margin-left: 4px;
+    color: rgb(42, 41, 41);
+    /* background: #3c45ed; */
+    background: transparent;
+    background: transparent;
+    background-attachment: ck;
+    cursor: pointer;
+    font: inherit;
+}
+
+.toggle-btn:hover {
+    background: transparent;
+background: transparent;
+    text-decoration: underline;
+}
+
+
+
+
+
+

@@ -1,0 +1,18 @@
+[Unit]
+Description=COVID Dashboard Spring Boot application
+After=network.target
+
+[Service]
+Type=simple
+User=covid-dashboard
+Group=covid-dashboard
+WorkingDirectory=/opt/covid-dashboard
+EnvironmentFile=/etc/covid-dashboard.env
+ExecStart=/usr/bin/java -jar /opt/covid-dashboard/covid-dashboard-0.0.1-SNAPSHOT.jar
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

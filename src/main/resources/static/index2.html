@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Back</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="login" id="loginView">
+            <h2>Welcome Back</h2>
+            <p>Login to your account</p>
+
+            <p id="message" role="status" aria-live="polite"></p>
+
+            <form id="loginForm">
+                <input
+                    type="email"
+                    id="loginEmail"
+                    name="username"
+                    placeholder="Email"
+                    autocomplete="email"
+                    required
+                >
+
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Password"
+                    autocomplete="current-password"
+                    required
+                >
+
+                <p class="loginAccount">
+                    No account?
+                    <button type="button" class="toggle-btn"
+                        id="showSignup">
+                        Create one
+                    </button>
+                </p>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        <div class="signup" id="signupView" hidden>
+            <h2>Create Account</h2>
+
+            <form id="signupForm">
+                <input
+                    type="email"
+                    id="signupEmail"
+                    name="username"
+                    placeholder="Email"
+                    autocomplete="email"
+                    required
+                >
+
+                <input
+                    type="password"
+                    id="signupPassword"
+                    name="password"
+                    placeholder="Password"
+                    autocomplete="new-password"
+                    required
+                >
+
+                <p class="createAccount">
+                    Already have an account?
+                    <button type="button" class="toggle-btn"
+                        id="showLogin">
+                        Login
+                    </button>
+                </p>
+
+                <button type="submit">Signup</button>
+            </form>
+        </div>
+
+    </div>
+    <script src="index2.js" defer></script>
+
+</body>
+</html>
